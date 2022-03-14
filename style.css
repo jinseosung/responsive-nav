@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: firebrick;
+}
+
+.nav__logo {
+  font-size: 24px;
+  color: white;
+}
+
+.nav__logo i {
+  color: orange;
+  margin-right: 4px;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__menu li {
+  padding: 8px 12px;
+}
+
+.nav__menu li:hover {
+  background-color: rgb(110, 21, 21);
+  border-radius: 4px;
+}
+
+.nav__icons {
+  display: flex;
+  list-style: none;
+  color: white;
+  padding-left: 0;
+}
+
+.nav__icons li {
+  padding: 8px 12px;
+}
+
+
