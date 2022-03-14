@@ -53,37 +53,44 @@ a {
 }
 
 .nav__toogleBtn {
-    display: none;
-    position: absolute;
-    right: 32px;
-    font-size: 24px;
-    color: orange;
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: orange;
 }
 
 @media screen and (max-width: 768px) {
-    .nav {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 8px 24px;
-    }
-  
-    .nav__menu {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .nav__menu li {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .nav__icons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .nav__toogleBtn {
-        display: block;
-    }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
   }
+
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav__toogleBtn {
+    display: block;
+  }
+
+  .nav__menu.active,
+  .nav__icons.active {
+    display: flex;
+  }
+}
