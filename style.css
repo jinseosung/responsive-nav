@@ -1,3 +1,10 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #b22222;
+  --background-hover-color: #6e1515;
+  --accent-color: #ffa500;
+}
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -5,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .nav {
@@ -13,16 +20,16 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 8px 12px;
-  background-color: firebrick;
+  background-color: var(--background-color);
 }
 
 .nav__logo {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
 }
 
 .nav__logo i {
-  color: orange;
+  color: var(--accent-color);
   margin-right: 4px;
 }
 
@@ -37,14 +44,14 @@ a {
 }
 
 .nav__menu li:hover {
-  background-color: rgb(110, 21, 21);
+  background-color: var(--background-hover-color);
   border-radius: 4px;
 }
 
 .nav__icons {
   display: flex;
   list-style: none;
-  color: white;
+  color: var(--text-color);
   padding-left: 0;
 }
 
@@ -57,7 +64,7 @@ a {
   position: absolute;
   right: 32px;
   font-size: 24px;
-  color: orange;
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {
